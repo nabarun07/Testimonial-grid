@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #e2e8ee;
+    /* background-image: url(bg img.jpg.svg); */
+    font-family:'Barlow Semi Condensed', sans-serif;
+    
+}
+/* .p{
+    size: 3rem;
+} */
+
+#testimonial-grid-container{
+    padding: 5% 3%;
+}
+
+#testimonial1{
+    background-color: #7541c8;
+    color: white;
+    position: relative;
+    z-index: 0;
+
+}
+
+#testimonial2{
+    background-color: #48556a;
+    color: white;
+    
+}
+
+#testimonial3{
+    background-color: white;
+    color: grey;
+    
+    
+}
+
+#testimonial4{
+    background-color: black;
+    color: white;
+    
+}
+
+#testimonial5{
+    background-color: white;
+    color: rgb(155, 154, 154);
+}
+
+.grid-items{
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
+    font-size: 13px;
+}
+#quote{
+    position: absolute;
+    right: 19%;
+    top: 0px;
+    z-index: 1;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 3;
+
+}
+.header img{
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid #7541c8;
+}
+
+.header .name{
+    font-size: 1rem;
+}
+
+@media(min-width:576px){
+    #testimonial-grid-container{
+        display: flex;
+        max-width: 1440px;
+        margin: 0 auto;
+        
+    }
+
+    #testimonial5{
+        flex-basis: 20%;
+    }
+    #main-left{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 80%;
+
+    }
+
+    #main-left .grid-items{
+        margin-right: 15px;
+    }
+    
+    #top{
+        display: flex;
+        flex-basis: 50%;
+    }
+    #bottom{
+        display: flex;
+        flex-basis: 50%;
+    }
+
+    #testimonial1{
+        flex-basis: 65%;
+    
+    }
+    
+    #testimonial2{
+        flex-basis: 35%;
+        
+    }
+    
+    #testimonial3{
+        flex-basis: 35%; 
+        
+        
+    }
+    
+    #testimonial4{
+        flex-basis: 65%;
+        
+    }
+}
